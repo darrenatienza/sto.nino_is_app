@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Sto. Niño Information System</string>
+    <string name="title1">Barangay Sto. Niño</string>
+    <string name="title2">Information System</string>
+    <string name="title3">BHW App</string>
+    <string name="health_data_board_list_title">Health Data Board</string>
+    <string name="health_data_board_update_title">Health Data Board Update</string>
+    <string-array name="years">
+        <item>Filter Years</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+    <string-array name="years2">
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+    <string-array name="quarters">
+        <item>Filter Quarter</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="quarter2">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_quarterly_report">Quarterly Report</string>
+    <string name="title_activity_accomplishment">Accomplishments</string>
+    <string name="form_title">Form Title</string>
+    <string name="title_activity_common_health_profile">Common Health Profile</string>
+    <string name="title_activity_login">Log in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="prompt_username">User Name</string>
+    <string name="prompt_ipAddress">Ip Address (required)</string>
+    <string name="title_ip_address">Set IP Address and Port here</string>
+    <string name="my_app_name">Sto. Niño Mobile App</string>
+</resources>

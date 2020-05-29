@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvFormTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/title_ip_address"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/title_semi_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvFormTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text=":"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/title_semi_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/etIpAddress"
+            app:layout_constraintEnd_toStartOf="@+id/etPort"
+            app:layout_constraintTop_toTopOf="@+id/etIpAddress" />
+
+        <EditText
+            android:id="@+id/etIpAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:hint="0.0.0.0"
+            android:inputType="textMultiLine"
+            android:paddingStart="@dimen/edit_text_padding_small"
+            android:paddingEnd="@dimen/edit_text_padding_small"
+            app:layout_constraintEnd_toStartOf="@+id/tvFormTitle2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFormTitle" />
+
+        <EditText
+            android:id="@+id/etPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:hint="12345"
+            android:inputType="textMultiLine"
+            android:paddingStart="@dimen/edit_text_padding_small"
+            android:paddingEnd="@dimen/edit_text_padding_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etIpAddress" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_button"
+            android:text="Save"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etIpAddress" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bsu.stoninois"
+
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/my_app_name"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/logo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2"
+        tools:replace="android:icon,android:label, android:allowBackup"
+       >
+        <activity android:name=".MainActivity_" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HealthDataBoardListActivity_"
+            android:label="@string/health_data_board_list_title"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.HealthDataBoardUpdateActivity_"
+            android:label="@string/health_data_board_update_title"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activities.QuarterlyReportListActivity_"
+            android:label="@string/title_activity_quarterly_report"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activities.QuarterlyReportUpdateActivity_"
+            android:label="@string/title_activity_quarterly_report"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activities.AccomplishmentListActivity_"
+            android:label="@string/title_activity_accomplishment"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.CommonHealthProfileActivity_"
+            android:label="@string/title_activity_common_health_profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LoginActivity_"
+            android:label="@string/title_activity_login"></activity>
+    </application>
+
+</manifest>

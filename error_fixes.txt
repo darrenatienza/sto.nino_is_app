@@ -1,0 +1,6 @@
+05-29-2020
+Error: Cleartext HTTP traffic to 192.168.192.10 not permitted
+ fixes found: on android manifest, add inside application config
+		  -> android:usesCleartextTraffic="true"
+		
+		https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted
